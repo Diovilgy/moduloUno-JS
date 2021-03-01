@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practicando javascript</h1>
+  
+    <script>
+        let hola= "hola mundo";
+        console.log(hola);
+        const num= 35;
+        console.log(num);
+        //Objeto
+/*         const obj={
+            nombre: "Diovilgy",
+            edad: "20"
+        }
+        console.log(obj);
+        obj.correo = "diovilgy@hotmail.com"
+        console.log(obj); */
+
+        //Arrays
+        
+        /* let marcas=['ford','nissan','toyota'];
+        console.log(marcas);
+        marcas.push('hyunda');
+        console.log(marcas); */
+
+        //Cadena 
+/*         let nombre= "diovilgy";
+        let lorem = "    Un lápiz o lapicero​ es un instrumento de escritura o de dibujo consistente en una mina o barrita de pigmento (generalmente de grafito y una grasa"; 
+        console.log(nombre);
+        let saludo= new String("Hola Mundo");
+        console.log(saludo);
+        console.log(
+            nombre.length,
+            saludo.length,
+            //mayusculas
+            nombre.toUpperCase(),
+            //minusculas
+            saludo.toLowerCase(),
+            lorem.includes("lapicero"),
+            lorem.includes("diovilgy"),
+            lorem.trim(),
+            lorem.split(":") 
+        ); */
+/*         
+        let nombre= "diovilgy";
+        let apellido= "salazar";
+        //Concatenacion
+        let saludo= "Hola, mi nombre completo es: " + 
+        nombre + " " + apellido + ".";
+        console.log(saludo);
+        //Interpolacion de variables 
+        let saludo2= `Mi nombre completo es ${nombre} ${apellido}`;
+        console.log(saludo2);
+
+        let ul=`
+        <ul>
+            <li>Verano</li>
+            <li>Invierno</li>
+            <li>Primavera</li>      
+            <li>Otoño</li>
+        </ul>`
+        console.log(ul);
+
+        let a= 20;
+        let numero= new Number(43);
+        let f= 332.34;
+
+        console.log(a,numero);
+        console.log(parseFloat(f));
+        console.log(a + Number.parseInt(f))
+
+        let b= true;
+        let c= false;
+        
+        let v = Boolean(true);
+        console.log(Boolean(0)); */
+        
+        //Funciones 
+        
+/*         function miFuncion(){
+            console.log("Esta es mi funcion");  
+        }
+        miFuncion();
+
+        let numero= function(){
+            suma=2+2;
+            return suma;
+        }
+        
+        console.log(numero()); 
+
+        //Array
+        let colores= ["Amarillo","Azul","Negro","Blanco"];
+        console.log(colores);
+
+        console.log(colores.length);
+
+        let primero= colores[0];
+        console.log(primero);
+
+        let ultimo= colores[colores.length - 1];
+        console.log(ultimo);
+
+        //Recorrer un array
+
+        colores.forEach(function(elemento,index,array){
+            console.log('Color:' + elemento,'Posicion:' + index);
+        })
+        
+        
+        let pos= colores.indexOf('Negro');
+        console.log(pos);
+        console.log(colores[pos]); */
+        
+        //Objetos
+        const persona={
+            nombre: "Diovilgy",
+            apellido: "Salazar",
+            edad: 25,
+            pasatiempos: ["programar","leer","bailar","viajar"],
+            soltero: true,
+            contacto:{
+                email: "salazardiovilgy@gmail.com",
+                twitter: "@diovilgy",
+                movil: "0424-9581632"
+            },
+            saludar: function(){
+                console.log('Hola soy: ', this.nombre, 'y tengo:', this.edad , 'años.');
+            },
+        };
+
+        console.log("Nombre: " +persona.nombre); 
+        console.log("Apellido: " +persona.apellido);
+        console.log("Edad: " +persona.edad);
+        console.log("Pasatiempos: " +persona.pasatiempos[0]);
+        console.log(persona.contacto);
+        persona.saludar();
+        console.log(Object.values(persona));
+        console.log(Object.keys(persona));
+    </script>
+</body>
+</html>
